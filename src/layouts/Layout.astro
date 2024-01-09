@@ -2,7 +2,7 @@
 interface Props {
 	title: string;
 }
-
+import Footer from '../components/Footer.tsx';
 const { title } = Astro.props;
 ---
 
@@ -19,6 +19,7 @@ const { title } = Astro.props;
 	<body>
 		<slot />
 	</body>
+	<Footer />
 </html>
 <style is:global>
 	:root {
